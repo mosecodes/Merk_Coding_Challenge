@@ -232,7 +232,6 @@ def main():
         print(f'made solution folder at ./{os.path.basename(solution_path)}')
     except FileExistsError as err:
         print(f"The folder '{solution_path}' already exists")
-        # raise err
     # add solution files to directory
     for df in solution_list:
         file_name = df.name + '_solution'

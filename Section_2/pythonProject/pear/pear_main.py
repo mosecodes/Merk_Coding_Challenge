@@ -144,9 +144,8 @@ def main():
     try:
         os.mkdir(solution_path)
         print(f'made solution folder at ./{os.path.basename(solution_path)}')
-    except FileExistsError as err:
+    except FileExistsError:
         print(f"The folder '{solution_path}' already exists")
-        raise err
     for df in data_files_array:
         file_name = df.name + '_solution'
         path = os.path.join(solution_path, file_name)
