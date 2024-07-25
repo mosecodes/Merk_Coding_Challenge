@@ -1,0 +1,2 @@
+Exported floating-point values are rounded to the nearest even choice.
+See: https://docs.python.org/3/library/functions.html#round
